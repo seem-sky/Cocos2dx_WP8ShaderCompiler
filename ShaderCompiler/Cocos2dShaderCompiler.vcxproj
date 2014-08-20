@@ -77,33 +77,33 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\cocos\2d\cocos2d_winrt_headers.props" />
-    <Import Project="..\..\..\cocos\2d\cocos2d_winrt.props" />
+    <Import Project="..\cocos\2d\cocos2d_winrt_headers.props" />
+    <Import Project="..\cocos\2d\cocos2d_winrt.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\cocos\2d\cocos2d_winrt_headers.props" />
-    <Import Project="..\..\..\cocos\2d\cocos2d_winrt.props" />
+    <Import Project="..\cocos\2d\cocos2d_winrt_headers.props" />
+    <Import Project="..\cocos\2d\cocos2d_winrt.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\cocos\2d\cocos2d_winrt_headers.props" />
-    <Import Project="..\..\..\cocos\2d\cocos2d_winrt.props" />
+    <Import Project="..\cocos\2d\cocos2d_winrt_headers.props" />
+    <Import Project="..\cocos\2d\cocos2d_winrt.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\cocos\2d\cocos2d_winrt_headers.props" />
-    <Import Project="..\..\..\cocos\2d\cocos2d_winrt.props" />
+    <Import Project="..\cocos\2d\cocos2d_winrt_headers.props" />
+    <Import Project="..\cocos\2d\cocos2d_winrt.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\cocos\2d\cocos2d_winrt_headers.props" />
-    <Import Project="..\..\..\cocos\2d\cocos2d_winrt.props" />
+    <Import Project="..\cocos\2d\cocos2d_winrt_headers.props" />
+    <Import Project="..\cocos\2d\cocos2d_winrt.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\cocos\2d\cocos2d_winrt_headers.props" />
-    <Import Project="..\..\..\cocos\2d\cocos2d_winrt.props" />
+    <Import Project="..\cocos\2d\cocos2d_winrt_headers.props" />
+    <Import Project="..\cocos\2d\cocos2d_winrt.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
@@ -112,7 +112,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <Link>
       <AdditionalDependencies>d2d1.lib;d3d11.lib;dwrite.lib;dxguid.lib;dxgi.lib;ole32.lib;windowscodecs.lib;libGLESv2.lib;libEGL.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\external\winrt-specific\zlib\prebuilt\$(Platform);$(ProjectDir)..\..\..\external\winrt-specific\angle\prebuilt\$(Platform);%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\arm; $(VCInstallDir)\lib\arm</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\external\winrt-specific\zlib\prebuilt\$(Platform);$(ProjectDir)..\external\winrt-specific\angle\prebuilt\$(Platform);%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\arm; $(VCInstallDir)\lib\arm</AdditionalLibraryDirectories>
     </Link>
     <ClCompile>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -127,7 +127,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <Link>
       <AdditionalDependencies>d2d1.lib;d3d11.lib;dwrite.lib;dxguid.lib;dxgi.lib;ole32.lib;windowscodecs.lib;libGLESv2.lib;libEGL.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\external\winrt-specific\zlib\prebuilt\$(Platform);$(ProjectDir)..\..\..\external\winrt-specific\angle\prebuilt\$(Platform);%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\arm; $(VCInstallDir)\lib\arm</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\external\winrt-specific\zlib\prebuilt\$(Platform);$(ProjectDir)..\external\winrt-specific\angle\prebuilt\$(Platform);%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\arm; $(VCInstallDir)\lib\arm</AdditionalLibraryDirectories>
     </Link>
     <ClCompile>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -142,7 +142,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Link>
       <AdditionalDependencies>d2d1.lib;d3d11.lib;dwrite.lib;dxguid.lib;dxgi.lib;ole32.lib;windowscodecs.lib;libGLESv2.lib;libEGL.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\external\winrt-specific\zlib\prebuilt\$(Platform);$(ProjectDir)..\..\..\external\winrt-specific\angle\prebuilt\$(Platform);%(AdditionalLibraryDirectories);$(VCInstallDir)\lib\store;$(VCInstallDir)\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\external\winrt-specific\zlib\prebuilt\$(Platform);$(ProjectDir)..\external\winrt-specific\angle\prebuilt\$(Platform);%(AdditionalLibraryDirectories);$(VCInstallDir)\lib\store;$(VCInstallDir)\lib</AdditionalLibraryDirectories>
     </Link>
     <ClCompile>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -157,7 +157,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Link>
       <AdditionalDependencies>d2d1.lib;d3d11.lib;dwrite.lib;dxguid.lib;dxgi.lib;ole32.lib;windowscodecs.lib;libGLESv2.lib;libEGL.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\external\winrt-specific\zlib\prebuilt\$(Platform);$(ProjectDir)..\..\..\external\winrt-specific\angle\prebuilt\$(Platform);%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store; $(VCInstallDir)\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\external\winrt-specific\zlib\prebuilt\$(Platform);$(ProjectDir)..\external\winrt-specific\angle\prebuilt\$(Platform);%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store; $(VCInstallDir)\lib</AdditionalLibraryDirectories>
     </Link>
     <ClCompile>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -172,7 +172,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Link>
       <AdditionalDependencies>d2d1.lib;d3d11.lib;dwrite.lib;dxguid.lib;dxgi.lib;ole32.lib;windowscodecs.lib;libGLESv2.lib;libEGL.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\external\winrt-specific\zlib\prebuilt\$(Platform);$(ProjectDir)..\..\..\external\winrt-specific\angle\prebuilt\$(Platform);%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\amd64; $(VCInstallDir)\lib\amd64</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\external\winrt-specific\zlib\prebuilt\$(Platform);$(ProjectDir)..\external\winrt-specific\angle\prebuilt\$(Platform);%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\amd64; $(VCInstallDir)\lib\amd64</AdditionalLibraryDirectories>
     </Link>
     <ClCompile>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -187,7 +187,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Link>
       <AdditionalDependencies>d2d1.lib;d3d11.lib;dwrite.lib;dxguid.lib;dxgi.lib;ole32.lib;windowscodecs.lib;libGLESv2.lib;libEGL.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\external\winrt-specific\zlib\prebuilt\$(Platform);$(ProjectDir)..\..\..\external\winrt-specific\angle\prebuilt\$(Platform);%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\amd64; $(VCInstallDir)\lib\amd64</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\external\winrt-specific\zlib\prebuilt\$(Platform);$(ProjectDir)..\external\winrt-specific\angle\prebuilt\$(Platform);%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\amd64; $(VCInstallDir)\lib\amd64</AdditionalLibraryDirectories>
     </Link>
     <ClCompile>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -227,11 +227,11 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <None Include="..\..\..\external\winrt-specific\angle\prebuilt\Win32\libEGL.dll">
+    <None Include="..\external\winrt-specific\angle\prebuilt\Win32\libEGL.dll">
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</DeploymentContent>
     </None>
-    <None Include="..\..\..\external\winrt-specific\angle\prebuilt\Win32\libGLESv2.dll">
+    <None Include="..\external\winrt-specific\angle\prebuilt\Win32\libGLESv2.dll">
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</DeploymentContent>
     </None>
@@ -246,10 +246,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\cocos\2d\cocos2d_winrt.vcxproj">
+    <ProjectReference Include="..\cocos\2d\cocos2d_winrt.vcxproj">
       <Project>{2330edf4-5596-4b53-8ba5-158ddde713d9}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\external\chipmunk\proj.winrt\chipmunk.vcxproj">
+    <ProjectReference Include="..\external\chipmunk\proj.winrt\chipmunk.vcxproj">
       <Project>{8b143765-5c1b-4076-9384-3e0ec3650b1a}</Project>
     </ProjectReference>
   </ItemGroup>
