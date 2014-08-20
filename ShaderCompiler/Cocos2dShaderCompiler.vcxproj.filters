@@ -36,8 +36,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Cocos2dShaderCompiler_TemporaryKey.pfx" />
-    <None Include="..\..\..\external\winrt-specific\angle\prebuilt\Win32\libEGL.dll" />
-    <None Include="..\..\..\external\winrt-specific\angle\prebuilt\Win32\libGLESv2.dll" />
+    <None Include="..\external\winrt-specific\angle\prebuilt\Win32\libEGL.dll" />
+    <None Include="..\external\winrt-specific\angle\prebuilt\Win32\libGLESv2.dll" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="DirectXPage.xaml" />

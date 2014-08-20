@@ -177,7 +177,7 @@ bool CCPrecompiledShaders::addProgram(GLuint program, const std::string& id)
 
 void CCPrecompiledShaders::savePrecompiledPrograms(Windows::Storage::StorageFolder^ folder)
 {
-    Platform::String ^fileName = L"precompiledshaders.h";
+    Platform::String ^fileName = L"GAFPrecompiledShaders.h";
 
     auto saveTask = create_task(folder->CreateFileAsync(fileName, CreationCollisionOption::ReplaceExisting));
 

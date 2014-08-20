@@ -103,7 +103,7 @@ GLProgramCache::~GLProgramCache()
 
 bool GLProgramCache::init()
 {    
-    loadDefaultGLPrograms();
+    //loadDefaultGLPrograms();
     return true;
 }
 
