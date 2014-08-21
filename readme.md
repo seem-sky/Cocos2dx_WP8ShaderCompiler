@@ -1,0 +1,1 @@
+This is cocos2dx shader compiler for WP8
