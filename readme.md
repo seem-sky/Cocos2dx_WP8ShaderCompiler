@@ -1,1 +1,1 @@
-This is cocos2dx shader compiler for WP8
+GAF Cocos2d-x shader compiler for WP8
