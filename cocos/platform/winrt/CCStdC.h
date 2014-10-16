@@ -95,7 +95,7 @@ typedef SSIZE_T ssize_t;
 #include <Windows.h>
 
 #undef timeval
-struct timeval
+struct timeval1
 {
 	long tv_sec;		// seconds
 	long tv_usec;    // microSeconds

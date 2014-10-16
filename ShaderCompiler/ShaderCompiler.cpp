@@ -77,6 +77,7 @@ struct ShaderToCompile
 #define STRINGIFY(x) #x
 #include "../external/gaf/Library/Sources/Shaders/pcShader_masked_texture.frag"
 #include "../external/gaf/Library/Sources/Shaders/pcShader_PositionTexture_alphaFilter.frag"
+#include "../external/gaf/Library/Sources/Shaders/pcShader_PositionTextureAlpha_frag_noCTX.frag"
 #include "../external/gaf/Library/Sources/Shaders/pcShader_PositionTextureAlpha_frag.frag"
 #include "../external/gaf/Library/Sources/Shaders/GlowFragmentShader.frag"
 #include "../external/gaf/Library/Sources/Shaders/GaussianBlurFragmentShader.frag"
@@ -96,6 +97,7 @@ bool ShaderCompiler::Compile(Windows::UI::Xaml::Controls::TextBlock^ resultText)
     std::vector<ShaderToCompile> shaders;
 
     shaders.push_back(ShaderToCompile{ cocos2d::ccPositionTextureColor_vert, pcShader_PositionTextureAlpha_frag_fs, "GAFSpriteWithAlpha" });
+    shaders.push_back(ShaderToCompile{ cocos2d::ccPositionTextureColor_vert, pcShader_PositionTextureAlpha_frag_noCTX_fs, "GAFStencilMaskAlphaFilterNoCtx" });
     shaders.push_back(ShaderToCompile{ cocos2d::ccPositionTextureColor_vert, pcShader_PositionTexture_alphaFilter_fs, "GAFStencilMaskAlphaFilter" });
     shaders.push_back(ShaderToCompile{ GaussianBlurVertexShader_vs, GaussianBlurFragmentShader_fs, "GAFGaussianBlur" });
     shaders.push_back(ShaderToCompile{ GaussianBlurVertexShader_vs, GlowFragmentShader_fs, "GAFGlow" });
